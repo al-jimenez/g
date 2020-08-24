@@ -4,7 +4,7 @@ with option switches for shortcuts of my most commonly used git commands.
 
 ## Use
 Use this and customize it with your most used git commands.   
-I use this as a menu to remind my old man brain what I need to do next.
+I use this as a menu to remind my old man brain what I need to do next an what options I have to execute.
 
 ## Help menu
 When you execute g() without parameters you will get the following:
@@ -19,8 +19,14 @@ This option performs the following operations:
   3) git push (if remote repo defined)
 
  The commit message can be specified on the command line i.e.:  g u "<commit message>"
- This message will be prepended with the machine name and stagged filenames, i.e.:  "[a-macbook]:README.md; Updated README.md file"
+ This message will be appended with the stagged filenames, i.e.:  "[a-macbook]:README.md; Updated README.md file"
+ Optionaly I have include bash commits with the same code to prepend date and machine name as well.
 
 ### Ignore Option
  This option adds a file to the .gitignore file using the following syntax:
   g ignore <filename>
+
+### Git Log Options
+ Here are some 'git log' options that I commonly use:
+
+ g log | g l      -     which git log --name-status

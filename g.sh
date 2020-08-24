@@ -40,8 +40,9 @@ g() {
                        [[ $(git status --short) ]] && { commit_msg="$(git status --short | sed 's/ M / /' | tr -d '\n' | trim); "; }
                        [[ ! -z "${1}" ]] && { commit_msg="${@}; ${commit_msg}"; }  # add additional commmit message
                        echo -e "\nGit update:\n"
-                       #git add .; git commit -m "[$(dts %Y-%m-%-d' '%-I:%M' '%p;)]:[$(/bin/hostname 2>&1)]:${commit_msg}";
-                       git add .; git commit -m "[$(/bin/hostname 2>&1)]:${commit_msg}";
+                       # git add .; git commit -m "[$(dts %Y-%m-%-d' '%-I:%M' '%p;)]:[$(/bin/hostname 2>&1)]:${commit_msg}";
+                       # git add .; git commit -m "[$(/bin/hostname 2>&1)]:${commit_msg}";
+                       git add .; git commit -m "${commit_msg}";
                        [[ $(git remote show) ]] && git push;  # push if remote repo defined
                        echo;
                        git --no-pager log --pretty=format:"%C(bold yellow)%cr %C(reset)%s" -1 HEAD
