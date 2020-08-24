@@ -33,10 +33,7 @@ g() {
       ph  | push     ) shift; git push ${@}; return;;
       r   | reset    ) shift; git reset ${@}; return;;
       st  | stash    ) shift; git stash ${@}; return;;
-      s   | status   ) shift;
-                       [[ ! -z "${1}" ]] && { shift; git status ${@}; return; }   # show regular git status
-                       [[ -z "${1}" ]] && { ~/dev/gitt/gitt.sh -s ${@}; return; } # show project status & notes
-                       ;;
+      s   | status   ) shift; git status ${@}; return;;
       i   | ignore   ) shift;
                        [[ -z "${1}" ]] && { echo -e "\n ERROR: selection requires a filename.\n\n  USAGE: g ignore <file>\n"; return; };
                        echo ${@} >> .gitignore; return ;;
@@ -45,8 +42,9 @@ g() {
                        #[[ ! -z "${1}" ]] && { commit_msg+="${@}"; }  # add additional commmit message
                        [[ ! -z "${1}" ]] && { commit_msg="${@}; ${commit_msg}"; }  # add additional commmit message
                        echo -e "\nGit update:\n"
-                       #git add .; git commit -m "[$(dts %Y-%m-%-d' '%-I:%M' '%p;)]:[$(/bin/hostname 2>&1)]:${commit_msg}";
-                       git add .; git commit -m "[$(/bin/hostname 2>&1)]:${commit_msg}";
+                       # git add .; git commit -m "[$(dts %Y-%m-%-d' '%-I:%M' '%p;)]:[$(/bin/hostname 2>&1)]:${commit_msg}";
+                       # git add .; git commit -m "[$(/bin/hostname 2>&1)]:${commit_msg}";
+                       git add .; git commit -m "${commit_msg}";
                        [[ $(git remote show) ]] && git push;  # push if remote repo defined
                        echo;
                        git --no-pager log --pretty=format:"%C(bold yellow)%cr %C(reset)%s" -1 HEAD

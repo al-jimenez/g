@@ -20,7 +20,7 @@ This option performs the following operations:
 
  The commit message can be specified on the command line i.e.:  g u "<commit message>"
  This message will be appended with the stagged filenames, i.e.:  "[a-macbook]:README.md; Updated README.md file"
- Optionaly I have include bash commits with the same code to prepend date and machine name as well.
+ Optionaly I have include bash comments with the same code to prepend date and machine name as well.
 
 ### Ignore Option
  This option adds a file to the .gitignore file using the following syntax:
