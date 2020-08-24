@@ -6,6 +6,10 @@ with option switches for shortcuts of my most commonly used git commands.
 Use this and customize it with your most used git commands.   
 I use this as a menu to remind my old man brain what I need to do next an what options I have to execute.
 
+### OS
+Used / created for macOS bash but can be modified for other OS.
+
+
 ## Help menu
 When you execute g() without parameters you will get the following:
 ![Help menu](https://github.com/al-jimenez/g/blob/master/g.png?raw=true)
