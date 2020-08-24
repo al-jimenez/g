@@ -29,7 +29,7 @@ This option performs the following operations:
 ### Git Log Options
  Here are some 'git log' options that I commonly use:
 
- g log | g l      =     which git log --name-status
+     l | log       =     which git log --name-status
 
      1 | 1liner   = git log --oneline
 
