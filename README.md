@@ -9,6 +9,7 @@ Use this and customize it with your most used git commands.   I use this as a me
 
 # Default Help menu
 
+When you execute g() without parameters you will get the following:
 ![When you execute g() without parameters you will get the following:](https://github.com/al-jimenez/g/blob/master/g.png?raw=true)
 
 ## Special Options
