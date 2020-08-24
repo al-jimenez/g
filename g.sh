@@ -33,7 +33,7 @@ g() {
       ph  | push     ) shift; git push ${@}; return;;
       r   | reset    ) shift; git reset ${@}; return;;
       st  | stash    ) shift; git stash ${@}; return;;
-      s   | status   ) shift; git status ${@}; [[ -e .notes ]] && { echo; cat .notes; return; } ;; # show git status and show project .notes if exists
+      s   | status   ) shift; git status ${@}; [[ -e .notes ]] && { echo; cat .notes; } ;; # show git status and show project .notes if exists
       i   | ignore   ) shift;
                        [[ -z "${1}" ]] && { echo -e "\n ERROR: selection requires a filename.\n\n  USAGE: g ignore <file>\n"; return; };
                        echo ${@} >> .gitignore; return ;;
