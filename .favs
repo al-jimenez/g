@@ -1,0 +1,30 @@
+♥︎ ♥︎ ♥︎  FUNCTION: 'cdf()'          - a cd macro funciton to cd to location of frontmost Finder window
+♥︎ ♥︎ ♥︎  FUNCTION: 'g()'            - list of git commands; fast, shortened git commands & help (g -?)
+♥︎ ♥︎ ♥︎    SCRIPT: 'chknet'         - provides a suite of network tests (custom to this machine) ALIAS: (chk -?)
+♥︎ ♥︎ ♥︎  FUNCTION: 'dev()'          - allows travels to local & remote dev projects using dev folder structure (dev -?)
+♥︎ ♥︎ ♥︎  FUNCTION: 'which()'        - Overloading of which. Reveals aliases & functions then uses '/usr/bin/which' (which ?)
+♥︎ ♥︎ ♥︎  FUNCTION: 'whereis()'      - Overloading of whereis. Locate programs (using native 'whereis') or a file (i.e. script, etc).
+♥︎ ♥︎ ♥︎    SCRIPT: 'mergePDFchknet' - Finder 'Quick Action' (automator-mergePDF) to merge graphics/images & PDF files.
+  ♥︎ ♥︎  FUNCTION: 'genpass()'      - a most excellent pw generator! Using www.dinopass.com STRONG pw.
+  ♥︎ ♥︎    SCRIPT: 'pwdb-to-icloud' - script to sync KeyPassx db to iCloud as a backup (db is alread encrypted).
+  ♥︎ ♥︎    SCRIPT: 'gitt.sh'        - project & git front-end that uses my dev file structures & git processes. (gitt -?)
+  ♥︎ ♥︎  FUNCTION: '.notes()'       - View/edit project notes in current folder (file: .notes) (.notes -?)
+  ♥︎ ♥︎  FUNCTION: 'ii()'           - System information function for macOS / bash / macbook pro hardware.
+  ♥︎ ♥︎  FUNCTION: 'favs()'         - list/rate favorite alias, functions & scripts (this list) (.favs -?)
+  ♥︎ ♥︎    SCRIPT: 'notes-sync'     - Sync local 'On My Mac' Notes on aj-macbook to d-macbook
+  ♥︎ ♥︎  FUNCTION: 'dts()'          - provides selection of date/time stamps; usable in srcipts. (dts -?)
+  ♥︎ ♥︎  FUNCTION: 'term_color()'   - load color code chart or individual colors (term_color -?)
+  ♥︎ ♥︎  FUNCTION: 'jmounts()       - mount "Documents", "Projects" and "Archive" shares from j-server shares.
+  ♥︎ ♥︎  FUNCTION: 'sys_profile()'  - info from System Report at macOS  About
+  ♥︎ ♥︎  FUNCTION: 'batt()'         - provides battery info for Macbook Pro. Show cycle count & life cycle percentage.
+    ♥︎  FUNCTION: 'jmount()'       - mount a j-server shares (needs function shell).
+    ♥︎  FUNCTION: 'wake()'         - list of computers to wakeonlan (wake -?)
+    ♥︎  FUNCTION: 'dir()'          - various flavors or /bin/ls options (dir ?)
+    ♥︎  FUNCTION: 'search.files()' - search system dot files for a string, using grep w/optional edit file.
+    ♥︎  FUNCTION: 'findin.files()' - find a string in dot files and list all files it is in.
+          ALIAS: '.h'             - less all the <dot> aliases & what they do (working & evolving)
+          ALIAS: '.d' & '.m'      - will execute dotfiles.sh, .m is menu, .d command line interface
+       FUNCTION: 'debug()'        - provides various debug options for functions, scripts; (debug -?)
+       FUNCTION: '.test()'        - provides ways to test scripts.  i.e.: .test <script> <options> ; ().test -?)
+         SCRIPT: 'cheatsheets'    - loads specific cheatsheets based on language cheatsheets.sh -h
+       FUNCTION: 'ffun()'         - list code for a FUNCTION.  i.e: ffun ffun
