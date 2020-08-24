@@ -2,7 +2,7 @@
 
 # 📌 g () - is a functional alias for git.  i.e.: 'g status' = 'git status'
 # With option switches for shortcuts of my most commonly used git commands
-# Usage: g | g <command> | ?
+# Usage: g | g <option> | g <option> <other parameters>
 # ------------------------------------------------------------------------------
 g() {
   if [ ! -z $1 ] ; then
