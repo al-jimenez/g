@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # g () - is a functional alias for git.  i.e.: 'g status' = 'git status'
 # With option switches for shortcuts of my most commonly used git commands
 # 📌 Usage: g | g <command> | ?
@@ -37,7 +38,7 @@ g() {
                        echo ${@} >> .gitignore; return ;;
       u   | update   ) shift;
                        [[ $(git status --short) ]] && { commit_msg="$(git status --short | sed 's/ M / /' | tr -d '\n' | trim); "; }
-                       [[ ! -z "${1}" ]] && { commit_msg+="${@}"; }  # add additional commmit message
+                       [[ ! -z "${1}" ]] && { commit_msg="${@}; ${commit_msg}"; }  # add additional commmit message
                        echo -e "\nGit update:\n"
                        #git add .; git commit -m "[$(dts %Y-%m-%-d' '%-I:%M' '%p;)]:[$(/bin/hostname 2>&1)]:${commit_msg}";
                        git add .; git commit -m "[$(/bin/hostname 2>&1)]:${commit_msg}";
