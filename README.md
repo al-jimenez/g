@@ -9,7 +9,6 @@ I use this as a menu to remind my old man brain what I need to do next an what o
 ### OS
 Used / created for macOS bash but can be modified for other OS.
 
-
 ## Help menu
 When you execute g() without parameters you will get the following:
 ![Help menu](https://github.com/al-jimenez/g/blob/master/g.png?raw=true)
