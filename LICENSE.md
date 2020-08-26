@@ -1,5 +1,3 @@
-The MIT License
-
 Copyright (c) Al Jimenez 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
