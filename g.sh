@@ -28,7 +28,7 @@ g() {
       gi  | init     ) shift; git init ${@}; return;;
       h   | head     ) shift; git show HEAD ${@}; return;;
       ls  | last     ) shift; git --no-pager show --summary ${@}; return;;
-      l   | log      ) shift; git log --name-status ${@}; return;;
+      l   | log      ) shift; git log ${@}; return;;
       li  | lignore  ) shift; less .gitignore; return;;
       lf  | logfind  ) shift; git log --pretty=format:"%C(white)%cs%C(reset):%s" --grep="${@}"; return;;
       o   | glog     ) shift; git log --name-status ${@}; return;;
