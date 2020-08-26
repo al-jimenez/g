@@ -32,7 +32,7 @@ g() {
       li  | lignore  ) shift; less .gitignore; return;;
       lf  | logfind  ) shift; git log --pretty=format:"%C(white)%cs%C(reset):%s" --grep="${@}"; return;;
       o   | glog     ) shift; git log --name-status ${@}; return;;
-      1   | 1liner   ) shift; git log --pretty=format:"%C(white)%h%C(bold red)|%C(reset)%cs%C(bold red)|%C(reset)%sC(reset)"; return;;
+      1   | 1liner   ) shift; git log ${@} --pretty=format:"%C(white)%h%C(bold red)|%C(reset)%cs%C(bold red)|%C(reset)%sC(reset)"; return;;
       p   | pull     ) shift; git pull ${@}; return;;
       ph  | push     ) shift; git push ${@}; return;;
       r   | reset    ) shift; git reset ${@}; return;;
@@ -73,7 +73,7 @@ g() {
   s | status   = git status            af | after   = git log --after=<yesterday>|<string>
   l | log      = git log               lf | logfind = git log --grep <string>
   . | all      = git add .             ls | last    = git --no-pager show --summary
-  a | add      = git add                1 | 1liner  = git log --oneline
+  a | add      = git add                1 | 1liner  = git log oneliner (pretty format)
   c | commit   = git commit -m          b | brief   = git status --short --branch
   u | update   = git add,commit,push    d | detail  = git --no-pager show HEAD | less
   f | files    = git ls-files           h | head    = git show HEAD
