@@ -39,6 +39,8 @@ g() {
       st  | stash    ) shift; git stash ${@}; return;;
       s   | status   ) shift;
                        git status ${@};
+                       echo -e "${white}\nLast commit: \c";
+                       git --no-pager log --pretty=format:"%C(white)%cr %C(white)%s%C(white)" -1 HEAD; echo;
                        [[ -e .notes ]] && { echo; cat .notes; echo; }; echo; # show git status and show project .notes if exists
                        return ;;
       i   | ignore   ) shift;
@@ -52,8 +54,6 @@ g() {
                        # git add .; git commit -m "[$(/bin/hostname 2>&1)]:${commit_msg}";
                        git add .; git commit -m "${commit_msg}";
                        [[ $(git remote show) ]] && git push;  # push if remote repo defined
-                       echo;
-                       git --no-pager log --pretty=format:"%C(white)%cr %C(white)%s%C(white)" -1 HEAD
                        echo; [[ -e .notes ]] && { echo; cat .notes; echo;}
                        return ;;
       -h | help      ) shift;
