@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# 📌 g () - is a functional alias for git.  i.e.: 'g status' = 'git status'
-# With option switches for shortcuts of my most commonly used git commands
+# 📌 g () - PURPOSE: g is a shortcut for git (i.e.: 'g status' = 'git status')
+# and a preprocessor with option switches for my most commonly used git commands
 # Usage: g | g <option> | g <option> <other parameters>
 # ------------------------------------------------------------------------------
 g() {
