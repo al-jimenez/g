@@ -2,8 +2,7 @@
 g is a Bash function - g g is a shortcut for git (i.e.: 'g status' = 'git status') and a preprocessor with option switches for my most commonly used git commands
 
 ## Use
-Use this and customize it with your most used git commands.   
-I use this as a menu to remind my old man brain what I need to do next an what options I have to execute.
+Use this and customize it with your most used git commands. I use this as a menu to remind my old man brain what I need to do next and what options I have to execute.
 
 ### OS
 Used / created for macOS bash but can be modified for other OS.
