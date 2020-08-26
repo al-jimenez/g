@@ -39,8 +39,6 @@ g() {
       st  | stash    ) shift; git stash ${@}; return;;
       s   | status   ) shift;
                        git status ${@};
-                       echo -e "${white}\nLast commit: \c";
-                       git --no-pager log --pretty=format:"%C(white)%cr %C(white)%s%C(white)" -1 HEAD; echo;
                        [[ -e .notes ]] && { echo; cat .notes; echo; }; echo; # show git status and show project .notes if exists
                        return ;;
       i   | ignore   ) shift;
